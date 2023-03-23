@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Bereshit</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" sizes="192x192" href="./src/images/godIcon.png" />
+    <link rel="icon" href="./src/images/god-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" type="module"></script>
+  </head>
+  <body>
+    <div id="gameScreen">
+      <canvas id="canvasScreen" class="canvasScreen"></canvas>
+      <p class="soulResource" id="soulResource"></p>
+      <p class="levelText" id="levelText"></p>
+      <p class="hpLvl" id="hpLvl"></p>
+    </div>
+
+    <div class="actionButtons disable" id="actionButtons">
+      <button class="pause" id="pause"></button>
+      <button class="play" id="play"></button>
+      <button class="fastForward" id="fastForward"></button>
+      <p class="actionStatus" id="actionStatus"></p>
+    </div>
+
+    <div class="buttonContainer" id="buttonContainer"></div>
+    <div class="cardDescription" id="cardDescription"></div>
+
+    <div class="levelUpScreen disable" id="levelUpScreen">
+    </div>
+
+    <div class="gameOverScreen disable" id="gameOverScreen">
+    </div>
+
+    <div class="pauseMenu disable" id="pauseMenu">
+      <button class="resumeButton" id="resumeButton">Resume</button>
+    </div>
+
+    <button class="resetButton disable" id="resetButton">Reset Game</button>
+
+
+    <div class="soundsOption" id="soundsOption">
+      <p class="musicMute" id="musicMute">Music
+        <button class="musicMuteButton" id="musicMuteButton"></button>
+      </p>
+      <p class="soundMute" id="soundMute">Sounds
+        <button class="soundMuteButton" id="soundMuteButton"></button>
+      </p>
+    </div>
+
+    <canvas class="mainMenuCanvas" id="mainMenuCanvas"></canvas>
+    <div class="mainMenu" id="mainMenu">
+      <img src="./src/images/godLogo.png" />
+      <p></p>
+      <button id="startBtn" class="startBtn">Start Game</button>
+      <button id="startBtnAsGod" class="startBtnAsGod">GOD MODE</button>
+    </div>
+
+    <div class="beforeInit" id="beforeInit"><img src="./src/images/loadingGIF.gif"></div>
+  </body>
+</html>

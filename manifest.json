@@ -1,0 +1,14 @@
+{
+    "short_name": "Bereshit",
+    "name": "Bereshit",
+    "icons": [
+      {
+        "src": "./src/images/godIcon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "fullscreen",
+    "orientation": "landscape"
+  }
